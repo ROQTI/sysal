@@ -7,7 +7,17 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<table>
+  <tr>
+    <td>
+      <%= link_to "root", :action => "index", :controller => 'welcome' %>
 
+    </td>
+    <td>
+      <%= link_to "profile", :action => "profile", :controller => 'welcome' %>
+    </td>
+  </tr>
+</table>
 <%= yield %>
 
 </body>
